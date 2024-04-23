@@ -30,7 +30,7 @@ puede interactuar con el conversor
 
 ## Funcionamiento 
 
-Posee 6 clases: 
+Se compone de  6 clases: 
 
 -class record MonedaExchangeRateApi  para procesar los datos del Json de la api, 
  para representar la estructura del json de ingreso desde la api. 
