@@ -31,6 +31,7 @@ puede interactuar con el conversor
 ## Funcionamiento 
 
 Posee 6 clases: 
+
 -class record MonedaExchangeRateApi  para procesar los datos del Json de la api, 
  para representar la estructura del json de ingreso desde la api. 
  De este record para la  ExchangeRateApi el json es tipo anidado 
@@ -43,7 +44,10 @@ conversion_rates que su valor json anidado que contiene las tazas de cambio
   
  -class ConsultarMoneda para consultar la api, trasforma el json enviado de la api 
  a un objeto class record MonedaExchangeRateAp. 
+
+ 
  -class ConversorMoneda  para realizar la operación aritmética de conversión. 
+ 
  
 -class InterfaceUsuario consta de tres pasos despliega el menú, pone un objeto tipo 
  Scanner a la escucha y luego un switch que según la opción ingresada obtenida 
