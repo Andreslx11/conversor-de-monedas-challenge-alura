@@ -37,12 +37,12 @@ Se compone de  6 clases:
  De este record para la  ExchangeRateApi el json es tipo anidado 
  en el primer campo  base_code  es la clave que tiene el valor de la moneda tipo ISO 
 que se esta consultado, en el segundo campo hay map para poder acceder   a los campos del  
-conversion_rates que su valor json anidado que contiene las tazas de cambio 
+conversion_rates  json anidado que contiene las tazas de cambio 
  representado con clave-valor 
  ejemplo { base_code: "USD" , conversion_rates: {"USD":1, "COP:3700", "BRL":2000}. 
 
   
- -class ConsultarMoneda para consultar la api, trasforma el json enviado de la api 
+ -class ConsultarMoneda para consultar la api, trasnforma el json enviado de la api 
  a un objeto class record MonedaExchangeRateAp. 
 
  
@@ -62,5 +62,5 @@ conversion_rates que su valor json anidado que contiene las tazas de cambio
  a la moneda inicial  
  ejemplo { base_code: "USD" , conversion_rates: {"USD":1, "COP:3700", "BRL":2000}. 
 
- 
+ -class Principal donde se ejecuta el codigo por medio de un main
 
