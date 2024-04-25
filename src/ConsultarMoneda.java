@@ -32,7 +32,7 @@ public class ConsultarMoneda {
         } catch (ConnectException e){
             System.err.println("Verifique su conexion a intenert");
 
-        } catch(SocketTimeoutException e){
+        } catch (SocketTimeoutException e){
             System.err.println("El servidor no responde tiempo de espera agotado");
 
         }
