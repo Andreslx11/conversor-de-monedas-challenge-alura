@@ -5,7 +5,6 @@ import java.util.Scanner;
 
 public class ConversorMoneda {
     Scanner scanner;
-
     LocalDate fechaActual = LocalDate.now();
     DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy");
     String fechaFormateada = fechaActual.format(formato);
