@@ -64,3 +64,7 @@ conversion_rates  json anidado que contiene las tazas de cambio
 
  -class Principal donde se ejecuta el codigo por medio de un main
 
+
+## Mejoras:
+- Se le añadio la fecha a la conversión debido que las tazas de cambio varian para poder hacer
+ un registro.

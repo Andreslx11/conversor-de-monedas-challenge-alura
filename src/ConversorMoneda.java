@@ -1,9 +1,13 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ConversorMoneda {
-
     Scanner scanner;
+    LocalDate fechaActual = LocalDate.now();
+    DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+    String fechaFormateada = fechaActual.format(formato);
 
     public ConversorMoneda() {
         this.scanner = new Scanner(System.in);
@@ -20,16 +24,15 @@ public class ConversorMoneda {
             System.out.println("Ingrese el monto a cambiar: ");
             Double cantidadACambiar = scanner.nextDouble();
             Double cambio = monedaDestino * cantidadACambiar;
-            System.out.println(" - Su cambio es: " + cambio + " " + monedaFinal + "\n"
-                    + " - la taza fue  de " + monedaOrigen + " " + monedaInicial +
-                    " = " + monedaDestino + " " + monedaFinal);
+            System.out.println(String.format("- Su cambio es: %.2f %s  \n"
+                            + "- la taza para el dia %S fue  de " +
+                            " %.0f %s  = %f %s", cambio,
+                    monedaFinal, fechaFormateada, monedaOrigen, monedaInicial,
+                    monedaDestino, monedaFinal));
         } catch (InputMismatchException e) {
             System.out.println("Error ingrese el monto en números por favor");
             scanner.close();
-
         }
     }
-
-
 }
 
