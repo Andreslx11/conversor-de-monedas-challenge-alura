@@ -4,7 +4,6 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class ConversorMoneda {
-
     Scanner scanner;
 
     LocalDate fechaActual = LocalDate.now();
@@ -34,10 +33,7 @@ public class ConversorMoneda {
         } catch (InputMismatchException e) {
             System.out.println("Error ingrese el monto en números por favor");
             scanner.close();
-
         }
     }
-
-
 }
 

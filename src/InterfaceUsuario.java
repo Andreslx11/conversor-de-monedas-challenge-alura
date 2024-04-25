@@ -72,8 +72,8 @@ public class InterfaceUsuario {
                         monedaFinal = "COP";
                         return new Pair(monedaInicial, monedaFinal);
                     case 6:
-                        monedaInicial = "USD";
-                        monedaFinal = "COP";
+                        monedaInicial = "COP";
+                        monedaFinal = "USD";
                         return new Pair(monedaInicial, monedaFinal);
                     case 7:
                         monedaInicial = "salir";
